@@ -69,7 +69,7 @@ export default function Home() {
             <div className="max-w-4xl mx-auto relative z-10">
               <h2 className="text-3xl font-bold text-center text-white mb-12">{"{ skills }"}</h2>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
-                {['JavaScript', 'React', 'Next.js', 'Node.js', 'TypeScript', 'Tailwind CSS'].map((skill) => (
+                {['JavaScript', 'React', 'Next.js', 'Node.js', 'TypeScript', 'Tailwind CSS', 'HTML' ].map((skill) => (
                   <div
                     key={skill}
                     className="group relative bg-gray-700 rounded-lg h-40 overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300"
@@ -82,7 +82,6 @@ export default function Home() {
                       <h3 className="text-xl font-semibold text-gray-100 place-self-center transition-transform duration-300 group-hover:scale-105 group-hover:-translate-y-1">
                         {skill}
                       </h3>
-
 
                     </div>
                   </div>
