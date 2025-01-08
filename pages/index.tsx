@@ -6,6 +6,11 @@ import { RevealLTR } from "../components/RevealLTR"
 import React from 'react';
 
 export default function Home() {
+  const languages = ['Java', 'Python', 'C', 'SQL', 'JavaScript', 'HTML', 'CSS', 'Bash']
+  const tools = ['Git', 'JUnit', 'Flask', 'Firebase', 'VS Code', 'Android Studio', 'SQLAlchemy', 'Jira',
+    'Next.js', 'Node.js', 'REST', 'Docker', 'React', 'TailwindCSS'];
+  const additional = ['Agile', 'Waterfall', 'AWS Services', 'Statistics', 'Windows', 'Linux', 'MacOS']
+
   return (
     <div className="min-h-screen bg-gray-900">
       <Head>
@@ -53,14 +58,25 @@ export default function Home() {
           </div>
         </section>
 
-
+        {/* Description */}
+        <section id="desc" className="min-h-screen flex items-center justify-end bg-white border-2 border-black">
+        <div className="flex relative lg:w-[700px] lg:h-[1000px] mr-20">
+          <Image
+            src="/img/mepic.jpg"
+            alt="Profile picture"
+            fill
+            className="border-4 border-gray-700 shadow-lg object-cover"
+          />
+          </div>
+        </section>
 
         {/* Technical Skills Section */}
+
         <Reveal width="100%">
-          <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-t from-blue-950 to-blue-700 relative">
+          <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8 relative text-white">
             {/* Background Blur */}
             <div
-              className="absolute inset-0 bg-cover bg-center opacity-4 filter blur-md z-0"
+              className="absolute inset-0 bg-cover bg-center opacity-4 filter blur-md z-0 bg-gradient-to-tr"
               style={{
                 backgroundImage: 'url(/img/code.jpg)',
               }}
@@ -68,26 +84,40 @@ export default function Home() {
 
             <div className="max-w-4xl mx-auto relative z-10">
               <h2 className="text-3xl font-bold text-center text-white mb-12">{"{ skills }"}</h2>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
-                {['JavaScript', 'React', 'Next.js', 'Node.js', 'TypeScript', 'Tailwind CSS', 'HTML' ].map((skill) => (
-                  <div
-                    key={skill}
-                    className="group relative bg-gray-700 rounded-lg h-40 overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300"
-                  >
-                    {/* Gradient Hover Effect */}
-                    <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-blue-700 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
+            </div>
+            <div className="flex flex-col space-y-8 w-4/5 mx-auto relative">
+              <h1 className="text-3xl font-bold">/ languages</h1>
 
-                    {/* Content */}
-                    <div className="absolute inset-[1px] bg-gray-900 rounded-lg grid p-6">
-                      <h3 className="text-xl font-semibold text-gray-100 place-self-center transition-transform duration-300 group-hover:scale-105 group-hover:-translate-y-1">
-                        {skill}
-                      </h3>
 
-                    </div>
+              <div className="grid grid-cols-4 gap-4 ml-10">
+                {languages.map((language, index) =>
+                  <div className="text-center font-bold bg-red-500 p-6 pt-10 pb-10 m-3 rounded-lg bg-gradient-to-tr from-blue-950 to-indigo-950 ">
+                    {language}
                   </div>
-
-                ))}
+                )}
               </div>
+
+
+
+
+              <h1 className="text-3xl font-bold">/ frameworks && developer tools</h1>
+
+              <div className="grid grid-cols-4 gap-4 ml-10">
+                {tools.map((tool, index) =>
+                  <div className="text-center font-bold bg-red-500 p-3 pt-5 pb-5 m-1 rounded-lg bg-gradient-to-tr from-blue-950 to-indigo-950 ">
+                    {tool}
+                  </div>
+                )}
+              </div>
+              <h1 className="text-3xl font-bold">/ additional skills</h1>
+              <div className="grid grid-cols-4 gap-4 ml-10">
+                {additional.map((skill, index) =>
+                  <div className="text-center font-bold bg-red-500 p-6 pt-3 pb-3 m-1 rounded-lg bg-gradient-to-tr from-blue-950 to-indigo-950 ">
+                    {skill}
+                  </div>
+                )}
+              </div>
+
             </div>
 
           </section>
