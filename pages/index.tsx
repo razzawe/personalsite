@@ -59,16 +59,43 @@ export default function Home() {
         </section>
 
         {/* Description */}
-        <section id="desc" className="min-h-screen flex items-center justify-end bg-white border-2 border-black">
-        <div className="flex relative lg:w-[700px] lg:h-[1000px] mr-20">
-          <Image
-            src="/img/mepic.jpg"
-            alt="Profile picture"
-            fill
-            className="border-4 border-gray-700 shadow-lg object-cover"
-          />
+
+
+        <section id="desc" className="flex min-h-screen bg-white border-4 border-indigo-950">
+
+
+
+          {/* Left side: About Me */}
+
+          <div className="w-3/5 text-left mb-8 lg:mb-0 border-4 border-indigo-950 lg:mr-auto flex flex-col justify-center items-center">
+            <h1 className="text-7xl font-bold mb-20">Who Am I?</h1>
+            <div>
+              <h1>hi</h1>
+            </div>
           </div>
+
+
+          {/* Right side: Image */}
+          <div className="w-2/5 w-full flex justify-center items-center border-4 border-indigo-950 lg:ml-auto">
+            <div className="relative w-80 h-80 lg:w-[700px] lg:h-[1000px]">
+              <Image
+                src="/img/mepic.jpg"
+                alt="Profile picture"
+                fill
+                sizes="(max-width: 768px) 320px, 500px"
+                className="border-4 border-gray-700 shadow-lg object-cover"
+              />
+            </div>
+          </div>
+
         </section>
+
+
+
+
+
+
+
 
         {/* Technical Skills Section */}
 
