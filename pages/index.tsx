@@ -83,7 +83,7 @@ export default function Home() {
                   alt="Profile picture"
                   fill
                   sizes="(max-width: 768px) 320px, 500px"
-                  className="rounded-full border-4 border-gray-700 shadow-lg object-cover"
+                  className="rounded-full border-gray-700 shadow-lg object-cover"
                 />
               </div>
             </div>
@@ -92,36 +92,61 @@ export default function Home() {
 
         {/* Description */}
 
-        <section
-          id="desc"
-          className="flex min-h-screen bg-white border-4 border-indigo-950"
-        >
+        <section id="desc" className="flex min-h-screen bg-white ">
           {/* Left side: About Me */}
 
-          <div className="w-1/2 text-left mb-8 lg:mb-0 border-4 border-indigo-950 lg:mr-auto flex flex-col justify-left items-left mt-1 ml-4 pl-4">
-            <h1 className="text-5xl font-bold mb-8 text-black pt-10">
-              About Me
+          <div className="w-1/2 text-left lg:mr-auto flex flex-col justify-left items-left ml-4 pl-4 pr-4 mb-10">
+            <h1 className="text-5xl font-bold mt-10 text-indigo-950 pt-10">
+              {"{ about me }"}
             </h1>
-            <div className="flex-grow flex flex-col justify-evenly text-5l">
-              <p className="text-black max-w-prose">
-                My name is Rami Al-Azzawe, and I am currently pursuing a
-                Computer Science degree at the University of Toronto.
-              </p>
-
-              <p className="text-black max-w-prose">
-                I am a hardworking and dedicated individual, and these traits
-                have always been something I pride myself on as they have
-                always, and continue to, bring me success and ultimately closer
-                to reaching all of my career goals as an aspiring Software
-                Engineer.
-              </p>
-              <p className="text-black max-w-prose">
-                I have a strong passion and aptitude for anything technology
-                related, and I look forward to pursuing a career which will
-                allow me to extend these interests and allow me to meet
-                professionals in the industry where I can continue to learn and
-                further my experience.
-              </p>
+            <div className="flex-grow flex flex-col justify-evenly text-xl">
+              
+              <div>
+                <h1 className="text-xl font-bold mt-10 text-indigo-950 pt-10">
+                  {"{ who am i ?}"}
+                </h1>
+                <p className="text-gray-600 max-w-prose ">
+                  // My name is Rami Al-Azzawe, and I am in my third year of my
+                  Computer Science degree as a Software Engineering Specialist at the University of Toronto.
+                </p>
+              </div>
+              <div>
+                <h1 className="text-xl font-bold mt-10 text-indigo-950 pt-10">
+                  {"{ areas of interest }"}
+                </h1>
+                <p className="text-gray-600 max-w-prose">
+                  // As of right now, I am continuing to explore my interests. Some platforms
+                  that greatly interest me are web development and app development, and 
+                </p>
+              </div>
+              <div>
+                <h1 className="text-xl font-bold mt-10 text-indigo-950 pt-10">
+                  {"{ goals && aspirations }"}
+                </h1>
+                <p className="text-gray-600 max-w-prose">
+                  // I am a hardworking and dedicated individual, and these
+                  traits have always been something I pride myself on as they
+                  have always, and continue to, bring me success and ultimately
+                  closer to reaching all of my career goals as an aspiring
+                  Software Engineer.
+                </p>
+              </div>
+              <div>
+                <h1 className="text-xl font-bold mt-10 text-indigo-950 pt-10">
+                  {"{ hobbies && interests }"}
+                </h1>
+                <p className="text-gray-600 max-w-prose">
+                  // In addition to my strong passion and aptitude for anything
+                  technology related, I am a very music oriented person. I have
+                  been playing the guitar since I was 10 years old. My genres
+                  range anywhere from pop, to throwbacks from decades as early
+                  as the 50s, where one day you'll find me listening to One
+                  Direction, and the next, the legend Billy Joel.
+                  <br/><br/> Lastly, fitness is 
+                  another very important part of my life, and is something I ensure to 
+                  fit into my schedule for physical and mental wellbeing
+                </p>
+              </div>
             </div>
           </div>
 
@@ -160,7 +185,7 @@ export default function Home() {
               </h2>
             </div>
             <div className="flex flex-col space-y-8 w-4/5 mx-auto relative">
-              <h1 className="text-3xl font-bold">/ languages</h1>
+              <h1 className="text-3xl font-bold">// languages</h1>
 
               <div className="grid grid-cols-4 gap-4 ml-10">
                 {languages.map((language, index) => (
@@ -171,7 +196,7 @@ export default function Home() {
               </div>
 
               <h1 className="text-3xl font-bold">
-                / frameworks && developer tools
+                // frameworks && developer tools
               </h1>
 
               <div className="grid grid-cols-4 gap-4 ml-10">
@@ -181,7 +206,7 @@ export default function Home() {
                   </div>
                 ))}
               </div>
-              <h1 className="text-3xl font-bold">/ additional skills</h1>
+              <h1 className="text-3xl font-bold">// additional skills</h1>
               <div className="grid grid-cols-4 gap-4 ml-10">
                 {additional.map((skill, index) => (
                   <div className="text-center font-bold bg-red-500 p-6 pt-3 pb-3 m-1 rounded-lg bg-gradient-to-tr from-blue-950 to-indigo-950 ">
