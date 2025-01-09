@@ -1,15 +1,46 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Navbar from '../components/NavBar'
-import { Reveal } from "../components/Reveal"
-import { RevealLTR } from "../components/RevealLTR"
-import React from 'react';
+import Head from "next/head";
+import Image from "next/image";
+import Navbar from "../components/NavBar";
+import { Reveal } from "../components/Reveal";
+import { RevealLTR } from "../components/RevealLTR";
+import React from "react";
 
 export default function Home() {
-  const languages = ['Java', 'Python', 'C', 'SQL', 'JavaScript', 'HTML', 'CSS', 'Bash']
-  const tools = ['Git', 'JUnit', 'Flask', 'Firebase', 'VS Code', 'Android Studio', 'SQLAlchemy', 'Jira',
-    'Next.js', 'Node.js', 'REST', 'Docker', 'React', 'TailwindCSS'];
-  const additional = ['Agile', 'Waterfall', 'AWS Services', 'Statistics', 'Windows', 'Linux', 'MacOS']
+  const languages = [
+    "Java",
+    "Python",
+    "C",
+    "SQL",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "Bash",
+  ];
+  const tools = [
+    "Git",
+    "JUnit",
+    "Flask",
+    "Firebase",
+    "VS Code",
+    "Android Studio",
+    "SQLAlchemy",
+    "Jira",
+    "Next.js",
+    "Node.js",
+    "REST",
+    "Docker",
+    "React",
+    "TailwindCSS",
+  ];
+  const additional = [
+    "Agile",
+    "Waterfall",
+    "AWS Services",
+    "Statistics",
+    "Windows",
+    "Linux",
+    "MacOS",
+  ];
 
   return (
     <div className="min-h-screen bg-gray-900">
@@ -23,24 +54,25 @@ export default function Home() {
 
       <main className="pt-16">
         {/* Hero Section */}
-        <section id="about" className="min-h-screen flex items-center justify-center bg-gradient-to-b from-blue-950 to-blue-700 px-[5vw] py-[5vh]">
+        <section
+          id="about"
+          className="min-h-screen flex items-center justify-center bg-gradient-to-b from-blue-950 to-blue-700 px-[5vw] py-[5vh]"
+        >
           <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between">
             {/* Left side: About Me */}
 
             <div className="lg:w-1/2 text-left mb-8 lg:mb-0">
               <RevealLTR width="100%">
-
-                <h1 className="text-7xl font-bold text-white mb-4">Rami Al-Azzawe</h1>
+                <h1 className="text-7xl font-bold text-white mb-4">
+                  Rami Al-Azzawe
+                </h1>
               </RevealLTR>
-              <RevealLTR delay={0.75} >
-                <p className="text-3xl text-gray-300 mb-8">student | software engineer</p>
+              <RevealLTR delay={0.75}>
+                <p className="text-3xl text-gray-300 mb-8">
+                  student | software engineer
+                </p>
               </RevealLTR>
               {/* About Me Section */}
-
-
-
-
-
             </div>
 
             {/* Right side: Image */}
@@ -60,24 +92,42 @@ export default function Home() {
 
         {/* Description */}
 
-
-        <section id="desc" className="flex min-h-screen bg-white border-4 border-indigo-950">
-
-
-
+        <section
+          id="desc"
+          className="flex min-h-screen bg-white border-4 border-indigo-950"
+        >
           {/* Left side: About Me */}
 
-          <div className="w-3/5 text-left mb-8 lg:mb-0 border-4 border-indigo-950 lg:mr-auto flex flex-col justify-center items-center">
-            <h1 className="text-7xl font-bold mb-20">Who Am I?</h1>
-            <div>
-              <h1>hi</h1>
+          <div className="w-1/2 text-left mb-8 lg:mb-0 border-4 border-indigo-950 lg:mr-auto flex flex-col justify-left items-left mt-1 ml-4 pl-4">
+            <h1 className="text-5xl font-bold mb-8 text-black pt-10">
+              About Me
+            </h1>
+            <div className="flex-grow flex flex-col justify-evenly text-5l">
+              <p className="text-black max-w-prose">
+                My name is Rami Al-Azzawe, and I am currently pursuing a
+                Computer Science degree at the University of Toronto.
+              </p>
+
+              <p className="text-black max-w-prose">
+                I am a hardworking and dedicated individual, and these traits
+                have always been something I pride myself on as they have
+                always, and continue to, bring me success and ultimately closer
+                to reaching all of my career goals as an aspiring Software
+                Engineer.
+              </p>
+              <p className="text-black max-w-prose">
+                I have a strong passion and aptitude for anything technology
+                related, and I look forward to pursuing a career which will
+                allow me to extend these interests and allow me to meet
+                professionals in the industry where I can continue to learn and
+                further my experience.
+              </p>
             </div>
           </div>
 
-
           {/* Right side: Image */}
-          <div className="w-2/5 w-full flex justify-center items-center border-4 border-indigo-950 lg:ml-auto">
-            <div className="relative w-80 h-80 lg:w-[700px] lg:h-[1000px]">
+          <div className="w-1/2 flex justify-center items-center border-4 border-indigo-950 lg:ml-auto">
+            <div className="relative w-full h-full">
               <Image
                 src="/img/mepic.jpg"
                 alt="Profile picture"
@@ -87,75 +137,62 @@ export default function Home() {
               />
             </div>
           </div>
-
         </section>
-
-
-
-
-
-
-
 
         {/* Technical Skills Section */}
 
         <Reveal width="100%">
-          <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8 relative text-white">
+          <section
+            id="skills"
+            className="py-20 px-4 sm:px-6 lg:px-8 relative text-white"
+          >
             {/* Background Blur */}
             <div
               className="absolute inset-0 bg-cover bg-center opacity-4 filter blur-md z-0 bg-gradient-to-tr"
               style={{
-                backgroundImage: 'url(/img/code.jpg)',
+                backgroundImage: "url(/img/code.jpg)",
               }}
             ></div>
 
             <div className="max-w-4xl mx-auto relative z-10">
-              <h2 className="text-3xl font-bold text-center text-white mb-12">{"{ skills }"}</h2>
+              <h2 className="text-3xl font-bold text-center text-white mb-12">
+                {"{ skills }"}
+              </h2>
             </div>
             <div className="flex flex-col space-y-8 w-4/5 mx-auto relative">
               <h1 className="text-3xl font-bold">/ languages</h1>
 
-
               <div className="grid grid-cols-4 gap-4 ml-10">
-                {languages.map((language, index) =>
+                {languages.map((language, index) => (
                   <div className="text-center font-bold bg-red-500 p-6 pt-10 pb-10 m-3 rounded-lg bg-gradient-to-tr from-blue-950 to-indigo-950 ">
                     {language}
                   </div>
-                )}
+                ))}
               </div>
 
-
-
-
-              <h1 className="text-3xl font-bold">/ frameworks && developer tools</h1>
+              <h1 className="text-3xl font-bold">
+                / frameworks && developer tools
+              </h1>
 
               <div className="grid grid-cols-4 gap-4 ml-10">
-                {tools.map((tool, index) =>
+                {tools.map((tool, index) => (
                   <div className="text-center font-bold bg-red-500 p-3 pt-5 pb-5 m-1 rounded-lg bg-gradient-to-tr from-blue-950 to-indigo-950 ">
                     {tool}
                   </div>
-                )}
+                ))}
               </div>
               <h1 className="text-3xl font-bold">/ additional skills</h1>
               <div className="grid grid-cols-4 gap-4 ml-10">
-                {additional.map((skill, index) =>
+                {additional.map((skill, index) => (
                   <div className="text-center font-bold bg-red-500 p-6 pt-3 pb-3 m-1 rounded-lg bg-gradient-to-tr from-blue-950 to-indigo-950 ">
                     {skill}
                   </div>
-                )}
+                ))}
               </div>
-
             </div>
-
           </section>
-
         </Reveal>
       </main>
     </div>
-
-
-
-
-  )
+  );
 }
-
