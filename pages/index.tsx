@@ -5,18 +5,25 @@ import Link from "next/link";
 import Navbar from "../components/NavBar";
 import { Reveal } from "../components/Reveal";
 import { RevealLTR } from "../components/RevealLTR";
-import React from "react";
+import React, { useState } from "react";
 
 export default function Home() {
+  const [usageVisible, setUsageVisible] = useState(false)
+
+  const toggleUsageVisible = () => {
+    setUsageVisible(!usageVisible)
+  }
+
+
   const languages = [
-    "Java",
-    "Python",
-    "C",
-    "SQL",
-    "JavaScript",
-    "HTML",
-    "CSS",
-    "Bash",
+    {"id": 0, "language": "Java", "usage": "TAAM Collection Management System"},
+    {"id": 1, "language": "Python", "usage": "UofT Course Website Remodel"},
+    {"id": 2, "language": "C", "usage": "General Experiences"},
+    {"id": 3, "language": "SQL", "usage": "Room.it, ScriptBox Web IDE, UofT Course Website Remodel"},
+    {"id": 4, "language": "JavaScript", "usage": "Portfolio Website, Room.it, ScriptBox Web IDE, UofT Course Website Remodel"},
+    {"id": 5, "language": "HTML", "usage": "Portfolio Website, Room.it, ScriptBox Web IDE, UofT Course Website Remodel"},
+    {"id": 6, "language": "CSS", "usage": "Portfolio Website, Room.it, ScriptBox Web IDE, UofT Course Website Remodel"},
+    {"id": 7, "language": "Bash", "usage": "General Experiences"},
   ];
   const tools = [
     "Git",
@@ -70,17 +77,17 @@ export default function Home() {
                 </h1>
               </RevealLTR>
               <RevealLTR delay={0.75}>
-
                 <p className="text-3xl text-gray-300 mb-8">
                   student | software engineer
-                  <div className="flex items-center mt-6">
+                </p>
+                <div className="flex items-center mt-6">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-6"
+                    stroke="gray"
+                    className="size-6"
                   >
                     <path
                       stroke-linecap="round"
@@ -95,9 +102,7 @@ export default function Home() {
                   >
                     {"About Me"}
                   </Link>
-                  </div>
-                </p>
-
+                </div>
               </RevealLTR>
               {/* About Me Section */}
             </div>
@@ -234,12 +239,17 @@ export default function Home() {
               </h2>
             </div>
             <div className="flex flex-col space-y-8 w-4/5 mx-auto relative">
-              <h1 className="text-3xl font-bold">// languages</h1>
+              <div className="justify-center">
+                <h1 className="text-3xl font-bold">// languages</h1>
+              </div>
 
               <div className="grid grid-cols-4 gap-4 ml-10">
                 {languages.map((language, index) => (
-                  <div className="text-center font-bold bg-red-500 p-6 pt-10 pb-10 m-3 rounded-lg bg-gradient-to-tr from-blue-950 to-indigo-950 ">
-                    {language}
+                  <div className="group items-center justify-center text-center font-bold bg-red-500 p-6 pt-10 pb-10 m-3 rounded-lg bg-gradient-to-tr from-blue-950 to-indigo-950 border-4 border-transparent transition-colors duration-300 hover:border-white ">
+                    {language.language}
+                    <div className="flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <p className="text-gray-400 text-sm mt-2 ">Used in: {language.usage}</p>
+                    </div>
                   </div>
                 ))}
               </div>
