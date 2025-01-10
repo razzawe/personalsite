@@ -55,7 +55,7 @@ export default function Home() {
     <div className="min-h-screen bg-gray-900">
       <Head>
         <title>Rami Al-Azzawe</title>
-        <meta name="description" content="Personal portfolio of Your Name" />
+        <meta name="description" content="Rami Al-Azzawe Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
