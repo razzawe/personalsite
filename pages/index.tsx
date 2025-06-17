@@ -72,12 +72,12 @@ export default function Home() {
 
             <div className="lg:w-1/2 text-left mb-8 lg:mb-0">
               <RevealLTR width="100%">
-                <h1 className="md:text-7xl text-5xl font-bold text-white mb-4">
+                <h1 className="lg:text-7xl text-5xl font-bold text-white mb-4">
                   Rami Al-Azzawe
                 </h1>
               </RevealLTR>
               <RevealLTR delay={0.75}>
-                <p className="md:text-3xl text-xl text-gray-300 mb-8">
+                <p className="lg:text-3xl text-xl text-gray-300 mb-8">
                   student | software engineer
                 </p>
                 <div className="flex items-center mt-6">
