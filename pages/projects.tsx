@@ -45,7 +45,7 @@ export default function Home() {
       <NavBar />
       <section
         id="projects"
-        className="min-h-screen relative flex flex-col bg-gradient-to-b from-gray-900 to-gray-700 px-[5vw] py-[5vh]"
+        className="min-h-screen relative flex flex-col bg-gradient-to-b from-blue-950 to-blue-700 px-[5vw] py-[5vh]"
       >
         <div className="flex">
           <h1 className="text-center items-start justify-start text-white text-bold text-5xl mt-20 mb-5">
