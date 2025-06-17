@@ -202,7 +202,7 @@ export default function Home() {
                 <h1 className="text-3xl font-bold">// languages</h1>
               </div>
 
-              <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4 ml-10 break-words">
+              <div className="grid md:grid-cols-4 grid-cols-2 gap-4 ml-10 break-words">
                 {languages.map((language, index) => (
                   <div className="group items-center justify-center text-center font-bold bg-red-500 p-6 pt-10 pb-10 m-3 rounded-lg bg-gradient-to-tr from-blue-500 to-indigo-400 border-4 border-transparent transition-colors duration-300 hover:border-white ">
                     {language.language}
@@ -217,7 +217,7 @@ export default function Home() {
                 // frameworks && developer tools
               </h1>
 
-              <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4 ml-10 break-words">
+              <div className="grid md:grid-cols-4 grid-cols-2 gap-4 ml-10 break-words">
                 {tools.map((tool, index) => (
                   <div className="text-center font-bold bg-red-500 p-3 pt-5 pb-5 m-1 rounded-lg bg-gradient-to-tr from-blue-500 to-indigo-400 ">
                     {tool}
@@ -225,7 +225,7 @@ export default function Home() {
                 ))}
               </div>
               <h1 className="text-3xl font-bold">// additional skills</h1>
-              <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4 ml-10 break-words">
+              <div className="grid md:grid-cols-4 grid-cols-2 gap-4 ml-10 break-words">
                 {additional.map((skill, index) => (
                   <div className="text-center font-bold bg-red-500 p-6 pt-3 pb-3 m-1 rounded-lg bg-gradient-to-tr from-blue-500 to-indigo-400 ">
                     {skill}
