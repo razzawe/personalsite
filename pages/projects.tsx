@@ -61,7 +61,7 @@ export default function Home() {
             </h1>
 
             <div className="flex flex-row">
-              <div className="mt-2 p-2 rounded-lg bg-gradient-to-tr from-blue-950 to-indigo-950 border-4 border-transparent transition-colors duration-300 hover:border-white ">
+              <div className="mt-2 p-2 rounded-lg bg-gradient-to-tr from-gray-900 to-gray-700 border-4 border-transparent transition-colors duration-300 hover:border-white ">
                 <div className="relative w-[300px] h-32">
                   <Image
                     src={project.picture}
