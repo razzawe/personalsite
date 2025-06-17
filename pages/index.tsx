@@ -145,32 +145,12 @@ export default function Home() {
           </div>
         </section>
 
-        {/* <section id="desc" className="flex flex-row min-h-screen bg-gradient-to-b from-gray-700 to-gray-900">
-          
-        <div className="hidden md:block w-1/2 flex justify-center items-center ">
-            <div className="relative w-full h-full">
-              <Image
-                src="/img/IMG_0403.jpg"
-                alt="Profile picture"
-                fill
-                sizes="(max-width: 768px) 320px, 500px"
-                className="shadow-lg object-cover"
-              />
-            </div>
-          </div>
-
-        <div>
-          <p>hello</p>
-        </div>
-
-
-        </section> */}
 <section id="desc" className="grid grid-cols-1 md:grid-cols-2 min-h-screen bg-gradient-to-b from-gray-700 to-gray-900">
   {/* Left Side: Image */}
   <div className="hidden md:flex justify-center items-center p-4">
     <div className="relative w-[400px] h-[600px] lg:w-[500px] lg:h-[700px]">
       <Image
-        src="/img/IMG_0403.jpg"
+        src="/img/mepic2.png"
         alt="Profile picture"
         fill
         sizes="(max-width: 768px) 400px, 700px"
