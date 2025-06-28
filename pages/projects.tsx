@@ -45,7 +45,7 @@ export default function Home() {
       <NavBar />
       <section
         id="projects"
-        className="min-h-screen relative flex flex-col bg-gradient-to-b from-blue-950 to-blue-700 px-[5vw] py-[5vh]"
+        className="min-h-screen relative flex flex-col bg-gradient-to-b from-gray-900 to-gray-700 px-[5vw] py-[5vh]"
       >
         <div className="flex">
           <h1 className="text-center items-start justify-start text-white text-bold text-5xl mt-20 mb-5">
@@ -61,13 +61,13 @@ export default function Home() {
             </h1>
 
             <div className="flex flex-row">
-              <div className="mt-2 p-2 rounded-lg bg-gradient-to-tr from-gray-900 to-gray-700 border-4 border-transparent transition-colors duration-300 hover:border-white ">
-                <div className="relative w-[300px] h-32">
+              <div className="hidden md:block mt-2 p-2 rounded-lg bg-gradient-to-tr from-gray-900 to-gray-700 border-4 border-transparent transition-colors duration-300 hover:border-white ">
+                <div className="hidden md:block relative w-[300px] h-32">
                   <Image
                     src={project.picture}
                     alt="Project Picture"
                     fill
-                    className="full border-gray-700 shadow-lg object-cover"
+                    className="hidden md:block full border-gray-700 shadow-lg object-cover"
                   />
                 </div>
               </div>

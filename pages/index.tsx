@@ -123,7 +123,7 @@ export default function Home() {
           <div className="flex items-center absolute right-4 bottom-[100px]">
             <Link
               href="#skills"
-              className="text-white text-bold underline underline-offset-2 md:text-xl text-sm whitespace-nowrap mr-1"
+              className="hidden lg:block text-white text-bold underline underline-offset-2 md:text-xl text-sm whitespace-nowrap mr-1"
             >
               {"Jump to skills"}
             </Link>
@@ -134,7 +134,7 @@ export default function Home() {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="white"
-              className="size-6"
+              className="size-6 hidden lg:block "
             >
               <path
                 strokeLinecap="round"
@@ -161,17 +161,17 @@ export default function Home() {
 
   {/* Right Side: Text */}
   <div className="flex flex-col justify-center items-start p-4 md:pl-6 text-white space-y-4">
-    <h2 className="text-4xl font-bold">{"{ about me }"}</h2>
-    <p className="text-lg text-gray-300">
+    <h2 className="md:text-4xl text-lg font-bold">{"{ about me }"}</h2>
+    <p className="md:text-lg text-sm text-gray-300">
      I am Rami Al-Azzawe, a Software Engineer in the making, now studying at the University of Toronto, specializing in Computer Science.
     </p>
-    <p className="text-lg text-gray-300">
+    <p className="md:text-lg text-sm text-gray-300">
     I have a strong interest and aptitute for tech and how it shapes the world around us; and that is something which has been a staple of my life since I was young.
     </p>
-    <p className="text-lg text-gray-300">
+    <p className="md:text-lg text-sm text-gray-300">
       From a young age, I remember beginning my fascination with technology using a Windows XP laptop and developed a strong interest for Windows operating systems as a whole; which led to me diving into various operating systems through a VM such as Windows 95, 98, ME, and more (like any other kid that age would do... right?).
     </p>
-    <p className="text-lg text-gray-300">
+    <p className="md:text-lg text-sm text-gray-300">
       Thereon, over the years, I continued down the path of my passion for technology, developing some games in elementary school with pre-made assets, to creating a simple platformer video game from scratch based off the Mandalorian in high school, to today, where I am continuing to explore my interests in full stack web development and mobile app development.
     </p>
 
@@ -199,33 +199,33 @@ export default function Home() {
             </div>
             <div className="flex flex-col space-y-8 w-4/5 mx-auto relative">
               <div className="justify-center">
-                <h1 className="text-3xl font-bold">// languages</h1>
+                <h1 className="md:text-3xl text-xl font-bold">// languages</h1>
               </div>
 
-              <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4 ml-10 break-words">
+              <div className="grid md:grid-cols-4 grid-cols-2 gap-4 md:ml-10 break-words">
                 {languages.map((language, index) => (
                   <div className="group items-center justify-center text-center font-bold bg-red-500 p-6 pt-10 pb-10 m-3 rounded-lg bg-gradient-to-tr from-blue-500 to-indigo-400 border-4 border-transparent transition-colors duration-300 hover:border-white ">
                     {language.language}
                     <div className="flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <p className="text-sm mt-2 ">Used in: {language.usage}</p>
+                      <p className="md:text-sm text-xs mt-2 ">Used in: {language.usage}</p>
                     </div>
                   </div>
                 ))}
               </div>
 
-              <h1 className="text-3xl font-bold">
+              <h1 className="md:text-3xl text-xl font-bold">
                 // frameworks && developer tools
               </h1>
 
-              <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4 ml-10 break-words">
+              <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4 md:ml-10 break-words">
                 {tools.map((tool, index) => (
                   <div className="text-center font-bold bg-red-500 p-3 pt-5 pb-5 m-1 rounded-lg bg-gradient-to-tr from-blue-500 to-indigo-400 ">
                     {tool}
                   </div>
                 ))}
               </div>
-              <h1 className="text-3xl font-bold">// additional skills</h1>
-              <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4 ml-10 break-words">
+              <h1 className="md:text-3xl text-xl font-bold">// additional skills</h1>
+              <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4 md:ml-10  break-words">
                 {additional.map((skill, index) => (
                   <div className="text-center font-bold bg-red-500 p-6 pt-3 pb-3 m-1 rounded-lg bg-gradient-to-tr from-blue-500 to-indigo-400 ">
                     {skill}
